@@ -148,6 +148,8 @@ genfscon sysfs /devices/platform/sound-aoc/wakeup                               
 genfscon sysfs /devices/platform/19440000.drmdsim/19440000.drmdsim.0/wakeup/                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19450000.drmdsim/19450000.drmdsim.0/wakeup/                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/gnssif/wakeup                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/power/wakeup                                                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/wakeup                                                         u:object_r:sysfs_wakeup:s0
 
 # WiFi
 genfscon sysfs /wifi                                                           u:object_r:sysfs_wifi:s0
@@ -464,6 +466,9 @@ genfscon sysfs /devices/platform/17000000.aoc/control/memory_exception      u:ob
 genfscon sysfs /devices/platform/17000000.aoc/control/memory_votes_a32      u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/17000000.aoc/control/memory_votes_ff1      u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/17000000.aoc/notify_timeout_aoc_status     u:object_r:sysfs_aoc_notifytimeout:s0
+genfscon sysfs /devices/platform/17000000.aoc/control/udfps_set_clock_source    u:object_r:sysfs_aoc_udfps:s0
+genfscon sysfs /devices/platform/17000000.aoc/control/udfps_get_osc_freq        u:object_r:sysfs_aoc_udfps:s0
+genfscon sysfs /devices/platform/17000000.aoc/control/udfps_get_disp_freq       u:object_r:sysfs_aoc_udfps:s0
 
 # OTA
 genfscon sysfs /devices/platform/13200000.ufs/pixel/boot_lun_enabled           u:object_r:sysfs_ota:s0
